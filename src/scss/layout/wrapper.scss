@@ -1,0 +1,49 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: $semiBold;
+    margin: 0 auto;
+    width: 100vw;
+    max-width: $max-width;
+    min-width: $min-width;
+    overflow-x: hidden;
+    position: relative;
+    &__ellipse {
+        position: absolute;
+        right: 0;
+        @include tablets {
+            top: -6%;
+            right: -6%;
+        }
+    }
+}
+
+.header {
+    order: -1;
+}
+
+.service {
+    // order: 2;
+    flex: 0 1 auto;
+    margin: 1.875rem auto;
+    width: 100%;
+    max-width: 97.5rem;
+
+    @include tablets {
+        margin: .5rem auto;
+    }
+}
+
+.offer {
+    // order: 3;
+    flex: 1 1 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+    order: 4;
+    // margin: 0 auto;
+}
+
+

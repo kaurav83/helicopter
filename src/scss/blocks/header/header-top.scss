@@ -1,0 +1,12 @@
+.header-top {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 97.5rem;
+
+    @include tablets {
+        margin: .3rem;
+    }
+}

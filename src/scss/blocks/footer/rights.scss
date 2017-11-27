@@ -1,0 +1,18 @@
+.rights {
+    // margin: 0 auto;
+    text-align: center;
+    width: 100%;
+    padding: 3.5rem 0;
+    font-size: .875rem;
+    color: #fff;
+    background: #000;
+    margin-top: 6rem;
+    &__copyright {
+        color: #fff;
+        font-family: $semiBold;
+    }
+    &__spone {
+        color: $text-color-active;
+        font-family: $extraBold;
+    }
+}

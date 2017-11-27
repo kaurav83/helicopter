@@ -1,0 +1,38 @@
+.preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    z-index: 5;
+    transition: 1s all;
+    opacity: 1;
+    visibility: visible;
+    &.done {
+        opacity: 0;
+        visibility: hidden;
+    }
+    &__loader {
+        
+        
+    }
+    &__logo {
+        width: 10%;
+        height: 10%;
+        animation: 2s spin infinite linear;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

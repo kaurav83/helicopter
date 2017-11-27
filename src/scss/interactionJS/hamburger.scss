@@ -1,0 +1,23 @@
+.hamburger {
+
+    @include tabletsMin {
+        display: none;
+    }
+
+    @include tablets {
+        display: block;
+    }
+    position: absolute;
+    display: inline-block;
+    cursor: pointer;
+    right: 1.5rem;
+    top: 1rem;
+    transition: left 500ms cubic-bezier(.6, .05, .28, .91);
+    &__fragment {
+        width: 1.6875rem;
+        height: .15625rem;
+        background-color: #000;
+        margin-bottom: .25rem;
+        transition: transform 500ms cubic-bezier(.6, .05, .28, .91), opacity 500ms, background-color 250ms;
+    }
+}

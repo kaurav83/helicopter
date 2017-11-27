@@ -1,0 +1,9 @@
+.offer-block {
+    max-width: 82rem;
+    margin: 0 auto;
+    margin-top: 8.25rem;
+
+    @include tablets {
+        margin-top: 4rem;
+    }
+}

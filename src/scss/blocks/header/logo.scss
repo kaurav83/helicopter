@@ -1,0 +1,28 @@
+.logo {
+    margin: 0 0 0 1rem;
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        margin: 0 0 0 1.9rem;
+    }
+    @media screen and (min-width: 320px) and (max-width: 480px) {
+        margin: 0 0 0 .3rem;
+        &__icon {
+            width: 15%;
+        }
+    }
+
+    &__text {
+        font-family: $extraBold;
+        font-size: 1.25rem;
+        color: $text-hightlight;
+        margin-left: 1rem;
+
+        @include tablets {
+            font-size: 1rem;
+            margin-left: .4rem;
+            line-height: 1;
+        }
+    }
+}

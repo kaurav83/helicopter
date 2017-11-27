@@ -1,0 +1,25 @@
+section, header, footer, ul, li, p, object, h1, h2, h3 {
+    opacity: 0.0;
+    transition: opacity 1s;
+  }
+  
+  section.inview, header.inview, footer.inview, 
+  ul.inview, li.inview, p.inview, object.inview, h1.inview, h2.inview, h3.inview {
+    opacity: 1;
+  }
+  
+  body {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    color: yellow;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  
+  

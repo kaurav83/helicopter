@@ -1,0 +1,28 @@
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    position: relative;
+    @include tablets {
+        display: none;
+    }
+    &__item {
+        margin: 0 0 0 3.45rem;
+
+        @media screen and (min-width: 768px) and (max-width: 1700px) {
+            margin: 0 1rem 0 1rem;
+        }
+    }
+    
+    &__link {
+        font-family: $extraBold;
+        font-size: 1rem;
+        color: $text-hightlight;
+        &--active {
+            color: $text-color-active;
+        }
+        &:hover {
+            color: $text-color-active;
+        }
+    }
+}

@@ -1,0 +1,56 @@
+.service-info {
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    // margin-left: .8125rem;
+    &__title {
+        text-align: center;
+        font-family: $extraBold;
+        font-size: 6.25rem;
+        color: $text-hightlight;
+        margin-bottom: 5.55rem;
+        margin-left: 1.6rem;
+
+        @include tablets {
+            font-size: 4.5rem;
+            margin-left: .8rem;
+            margin-bottom: 0rem;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            font-size: 3.5rem;
+            text-align: left;
+            margin-left: 1.5rem;
+            margin-top: 3rem;
+        }
+    }
+    &__description {
+        text-align: center;
+        font-family: $extraBold;
+        font-size: 1.25rem;
+        color: $text-description;
+        margin-left: 1.3rem;
+        &:last-child {
+            margin-top: .8rem;
+
+            @include tablets {
+                margin-top: .2rem;
+            }
+        }
+        @include tablets {
+            font-size: 1.1rem;
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 2.4rem;
+            line-height: 1.6;
+        }
+
+        @media screen and (min-width: 320px) and (max-width: 480px) {
+            width: 90%;
+            margin-top: 2rem;
+        }
+    }
+}

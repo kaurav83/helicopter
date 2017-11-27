@@ -1,0 +1,12 @@
+.offer-title {
+    text-align: center;
+    font-size: 3.75rem;
+    font-family: $extraBold;
+    color: $text-hightlight;
+    margin-left: 1.4rem;
+
+    @media screen and (min-width: 320px) and (max-width: 546px) {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+}
